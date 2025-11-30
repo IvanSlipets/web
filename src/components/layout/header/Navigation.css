@@ -1,0 +1,27 @@
+.nav-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.2s;
+    background-color: #e0e0e0;
+    color: #555;
+    
+    text-decoration: none; 
+}
+
+.nav-button:hover {
+    background-color: #d0d0d0;
+}
+
+.nav-active {
+    background-color: #1E90FF;
+    color: #ffffff;
+}
+
+.nav-active:hover {
+    background-color: #0077cc;
+}
