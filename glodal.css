@@ -1,0 +1,67 @@
+body {
+    font-family: "Playfair Display", "Inter", "Roboto", "Arial", sans-serif;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+p,
+li,
+a,
+button,
+select,
+input {
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1219px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+li {
+    display: block;
+}
+
+p {
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+h4 {
+    margin: 0 auto;
+}
+
+button {
+    background: #FB8F1D;
+    width: 180px;
+    height: 52px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    vertical-align: middle;
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 0;
+}
