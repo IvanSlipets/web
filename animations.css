@@ -1,0 +1,53 @@
+.burger span {
+    transition: transform 0.3s ease;
+}
+
+.burger span:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Fade-in for hero text */
+.texts {
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover button effect */
+button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Featured destinations: scale on hover */
+.img-item {
+    transition: transform 0.4s ease;
+}
+
+.img-item:hover {
+    transform: scale(1.1);
+}
+
+/* Social media icons: pulse animation */
+.media_logo {
+    transition: transform 0.3s ease;
+}
+
+.media_logo:hover {
+    transform: scale(1.2) rotate(10deg);
+}

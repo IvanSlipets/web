@@ -1,0 +1,55 @@
+.logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 41px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    margin-top: 43px;
+}
+
+.header_clickable {
+    display: flex;
+}
+
+.top__nav ul {
+    display: flex;
+    padding: 0;
+}
+
+.header__nav-item {
+    margin-right: 34px;
+    font-size: 16px;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.header__button {
+    background: #FB8F1D;
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0;
+}
+
+.burger {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
