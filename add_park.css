@@ -1,0 +1,14 @@
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    text-align: center;
+}
+
+.add_form_container {
+    margin: 0 auto;
+    width: 500px;
+}
