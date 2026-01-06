@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Parks</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="lab_3.css">
+</head>
+
+<body>
+    <section class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href=""><button class="nav__button">My parks</button></a>
+                <a href="./add_park.html"><button class="nav__button">Add park</button></a>
+            </nav>
+            <form class="search-form" role="search">
+                <input type="search" placeholder="Type something..." aria-label="Search">
+                <button class="search-btn" type="submit">Search</button>
+                <button class="clear-btn" type="reset">Clear</button>
+            </form>
+        </header>
+
+        <div class="content-wrapper">
+
+            <aside>
+                <h3>Manage parks</h3>
+
+                <section class="sort-option">
+                    <label for="sort-toggle">Sort by the most expensive ticket</label>
+                    <label class="switch">
+                        <input type="checkbox" id="sort-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </section>
+
+                <section class="count-section">
+                    <span>Count total amount of parks:</span>
+                    <button id="count-btn">Count</button>
+                    <div class="total-expenses" aria-live="polite">Total amount: </div>
+                </section>
+            </aside>
+
+            <main>
+                <ul id="card_container" class="card_container"></ul>
+            </main>
+        </div>
+    </section>
+
+    <script type="module" src="./lab_3.js"></script>
+
+</body>
+
+</html>
