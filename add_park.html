@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add park</title>
+
+    <link rel="stylesheet" href="./add_park.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div>
+            <h1>Add new park</h1>
+        </div>
+        <section class="add_form_container">
+            <form id="add_form" class="add_form">
+                <h3 class="">Create card</h3>
+                <div class="title">
+                    <label for="title_input" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title_input" required minlength="3" maxlength="100"
+                        placeholder="For example: 'Culture Park'"
+                        title="Required field. Minimum length: 3 characters, maximum: 100." />
+                </div>
+                <div class="address">
+                    <label for="address_input" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address_input" required minlength="5" maxlength="200"
+                        placeholder="For example: '15 Prikladna Street'"
+                        title="Required field. Minimum length: 5 characters, maximum: 200." />
+                </div>
+                <div class="bike_path_length">
+                    <label for="bike_path_length_input" class="form-label">Bike path length (км)</label>
+                    <input type="number" step="0.01" class="form-control" id="bike_path_length_input" required min="0"
+                        placeholder="For example: 5.5 (km)"
+                        title="Required numeric field. Length of the bike path in kilometers, must be 0 or greater." />
+                </div>
+                <div class="ticket_price">
+                    <label for="ticket_price_input" class="form-label">Ticket price (грн)</label>
+                    <input type="number" step="0.01" class="form-control" id="ticket_price_input" required min="0"
+                        placeholder="For example: 150.00 (UAH)"
+                        title="Required numeric field. Ticket price in hryvnias, must be 0 or more." />
+                </div>
+                <div class="description">
+                    <label for="description_input" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="description_input" required minlength="10"
+                        maxlength="500" placeholder="Describe the main features of the park."
+                        title="Required field. Minimum length: 10 characters, maximum: 500." />
+                </div>
+                <button id="submit_button" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+    </section>
+
+    <script type="module" src="./lab_3.js"></script>
+
+</body>
+
+</html>
